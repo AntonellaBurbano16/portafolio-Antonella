@@ -4,55 +4,65 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!--------------------- Importar Iconos --------------------->
-		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 		<!--------------------- CSS -------------------------------->
 		<link rel="stylesheet" href="assets\css\style.css" />
 		<title>Portafolio | Antonella</title>
 	</head>
 	<body>
-		<div class="container">
-			<!-- Header -->
-			<nav id="header">
-				<div class="nav-logo">
-					<p class="nav-name">Antonella</p>
-					<span>.</span>
-				</div>
-				<div class="nav-menu" id="myNavMenu">
-					<ul class="nav_menu_list">
-						<li class="nav_list">
-							<a href="#home" class="nav-link">Inicio</a>
-							<div class="circle"></div>
-						</li>
 
-						<li class="nav_list">
-							<a href="#about" class="nav-link">Acerca de mí</a>
-							<div class="circle"></div>
-						</li>
+		<!-- Header -->
+		<nav id="header">
+			<div class="nav-logo">
+				<p class="nav-name">Antonella</p>
+				<span>.</span>
+			</div>
+			<div class="nav-menu" id="myNavMenu">
+				<ul class="nav_menu_list">
+					<li class="nav_list">
+						<a href="#home" class="nav-link" onclick="myMenuFunction()">Inicio</a>
+						<div class="circle"></div>
+					</li>
 
-						<li class="nav_list">
-							<a href="#Skills" class="nav-link">Skills</a>
-							<div class="circle"></div>
-						</li>
+					<li class="nav_list">
+						<a href="#about" class="nav-link" onclick="myMenuFunction()">Sobre mí</a>
+						<div class="circle"></div>
+					</li>
 
-						<li class="nav_list">
-							<a href="#contact" class="nav-link">Contacto</a>
-							<div class="circle"></div>
-						</li>
-					</ul>
-				</div>
-				<div class="nav-button">
-					<!-- <button class="btn">Descargar CV <i class="uis uis-file-download-alt"></i></button> -->
+					<!-- <li class="nav_list">
+						<a href="#skills" class="nav-link" onclick="myMenuFunction()">Skills</a>
+						<div class="circle"></div>
+					</li> -->
+
+					<li class="nav_list">
+						<a href="#projects" class="nav-link" onclick="myMenuFunction()">Proyectos</a>
+						<div class="circle"></div>
+					</li>
+
+					<li class="nav_list">
+						<a href="#contact" class="nav-link" onclick="myMenuFunction()">Contacto</a>
+						<div class="circle"></div>
+					</li>
+				</ul>
+			</div>
+			<div class="nav-button">
+				<!-- <button class="btn">Descargar CV <i class="uis uis-file-download-alt"></i></button> -->
+				<a href="assets\pdf\CV_AntonellaBurbano.pdf" download="CV_AntonellaBurbano">
 					<button class="btn">Descargar CV <i class="ri-download-2-fill"></i></button>
-				</div>
-				<div class="nav-menu-btn">
-					<!-- <i class="uis uis-bars" onclick="myMenuFunction()"></i> -->
-					<i class="ri-menu-line" onclick="myMenuFunction()"></i>
-				</div>
-			</nav>
+				</a>
+			</div>
+			<div class="nav-menu-btn">
+				<!-- <i class="uis uis-bars" onclick="myMenuFunction()"></i> -->
+				<i class="ri-menu-line" onclick="myMenuFunction()"></i>
+				<!-- <i class="ri-menu-line" id="burger-menu" title=""onclick="myMenuFunction()"></i> -->
 
+			</div>
+		</nav>
+
+		<div class="container">
 			<!-- Main -->
 			<main class="wrapper">
+				<!-- Featured Box -->
 				<section class="featured-box" id="home">
 					<div class="featured-text">
 						<div class="featured-text-card">
@@ -63,16 +73,23 @@
 						</div>
 						<div class="featured-text-info">
 							<p>
-								Tecnóloga en Telemática, certificada en Software Testing y Automatización de Pruebas Apasionada por la calidad del software, tengo experiencia en pruebas manuales y automatizadas, y utilizo metodologías ágiles como SCRUM para optimizar procesos.
+								Apasionada por la calidad del software, tengo experiencia en pruebas manuales y automatizadas, utilizo metodologías ágiles como SCRUM para optimizar procesos.
 							</p>
 						</div>
 						<div class="featured-text-btn">
 							<button class="btn blue-btn">Contactarme</button>
-							<button class="btn">Descargar CV <i class="ri-download-2-fill"></i></button>
+							<a href="assets\pdf\CV_AntonellaBurbano.pdf" download="CV_AntonellaBurbano">
+								<button class="btn">Descargar CV <i class="ri-download-2-fill"></i></button>
+							</a>
 						</div>
 						<div class="social_icons">
-							<div class="icon"><i class="ri-linkedin-box-fill"></i></div>
-							<div class="icon"><i class="ri-github-fill"></i></i></div>
+							<div class="icon">
+								<a href="https://www.linkedin.com/in/antonella-burbano"><i class="ri-linkedin-box-fill"></i>
+								</a>
+							</div>
+							<div class="icon">
+								<a href="https://github.com/AntonellaBurbano16"><i class="ri-github-fill"></i></a>
+							</div>
 						</div>
 					</div>
 
@@ -81,18 +98,301 @@
                             <img src="assets\images\Foto.jpg" alt="Foto Antonella">
                         </div>
                     </div>
+
+					<div class="scroll-icon-box">
+						<a href="#about" class="scroll-btn">
+							<i class="ri-scroll-to-bottom-fill"></i>
+							<p>Scroll Down</p>
+						</a>
+					</div>
+				</section>
+				<!-- About Box-->
+				<section class="section" id="about">
+					<div class="top-header">
+						<h1>Sobre mí</h1>
+					</div>
+					<div class="row">
+						<div class="col">
+							<div class="about-info">
+								<h3>Introducción</h3>
+								<p>Tecnóloga en Telemática con una sólida formación en soporte técnico y desarrollo TIC, certificada en Testing y Automatización de pruebas QA. Cuento con experiencia en el diseño y ejecución de pruebas manuales y automatizadas, abarcando todo el ciclo del desarrollo de software. Mi objetivo es garantizar la calidad, confiabilidad e integridad de las soluciones tecnológicas mediante la correcta ejecución de escenarios de prueba, reporte y documentación de incidencias, siguiendo las especificaciones funcionales. <br> Adaptándome fácilmente a nuevas herramientas y tecnologías, comprometida con el aprendizaje continuo para optimizar la calidad del software, con alta capacidad para la optimización de procesos y orientación al trabajo en equipo.
+								</p>
+								<div class="about-btn">
+									<a href="assets\pdf\CV_AntonellaBurbano.pdf" download="CV_AntonellaBurbano">
+										<button class="btn">Descargar CV <i class="ri-download-2-fill"></i></button>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="col">
+						<div class="skills-header section"> -->
+
+						<div class="skills skills__container">
+							<h3>Skills</h3>
+							<div>
+								<!-- Skill 1 -->
+								<div class="skills skills__content skills__close">
+									<div class="skills__header">
+										<i class="ri-code-line skills__icon"></i>
+										
+										<div>
+											<h1 class="skills__title">Lenguajes de programación</h1>
+										</div>
+
+										<i class="ri-arrow-down-s-line skills__arrow"></i>
+									</div>
+
+									<div class="skills__list grid">									
+										<div class="skills__title">
+											<p class="skills__name">Java</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">HTML</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">CSS</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">C++</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">Assembly</p>
+										</div>
+									</div>
+
+								</div>
+
+								<!-- Skill 2 -->
+								<div class="skills__content skills__close">
+									<div class="skills__header">
+										
+										<i class="ri-bug-fill skills__icon"></i>
+										
+										<div>
+											<h1 class="skills__title">Herramientas de Testing</h1>
+										</div>
+
+										<i class="ri-arrow-down-s-line skills__arrow"></i>
+									</div>
+
+									<div class="skills__list grid">
+										<div class="skills__title">
+											<p class="skills__name">JMeter</p>
+										</div>
+										
+
+										<div class="skills__title">
+											<p class="skills__name">Selenium IDE</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">Zephyr</p>
+										</div>
+									</div>
+
+								</div>
+
+								<!-- Skill 3 -->
+								<div class="skills__content skills__close">
+									<div class="skills__header">
+										<i class="ri-database-2-fill skills__icon"></i>
+										
+										<div>
+											<h1 class="skills__title">Bases de datos</h1>
+										</div>
+
+										<i class="ri-arrow-down-s-line skills__arrow"></i>
+									</div>
+
+									<div class="skills__list grid">
+										<div class="skills__title">
+											<p class="skills__name">SQL</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">MySQL</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">MongoDB</p>
+										</div>
+
+									</div>
+
+								</div>
+
+								
+								<!-- Skill 4 -->
+								<div class="skills__content skills__close">
+									<div class="skills__header">
+										<i class="ri-macbook-line skills__icon"></i>
+										
+										<div>
+											<h1 class="skills__title">Software y plataformas</h1>
+										</div>
+
+										<i class="ri-arrow-down-s-line skills__arrow"></i>
+									</div>
+
+									<div class="skills__list grid">
+										<div class="skills__title">
+											<p class="skills__name">Oracle VM VirtualBox</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">Asterisk</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">Google Cloud Platform</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">Postman</p>
+										</div>
+									</div>
+
+								</div>
+
+								
+								<!-- Skill 5 -->
+								<div class="skills__content skills__close">
+									<div class="skills__header">
+										<i class="ri-search-line skills__icon"></i>
+										
+										<div>
+											<h1 class="skills__title">Herramientas</h1>
+										</div>
+
+										<i class="ri-arrow-down-s-line skills__arrow"></i>
+									</div>
+
+									<div class="skills__list grid">
+										<div class="skills__title">
+											<p class="skills__name">Jira</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">Confluence</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">Git</p>
+										</div>
+
+										<div class="skills__title">
+											<p class="skills__name">GitHub</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+						</div>
+					</div>
+					<!--  -->
+				</section>
+
+				<!-- Project -->
+				<section id="projects">
+					<div class="project-header">
+						<h1>Proyectos</h1>
+					</div>
+					<div class="experience-details-container">
+						<div class="about-containers">
+						<div class="details-container color-container">
+							<div class="article-container">
+							<img
+								src="assets\images\BD.jpg"
+								alt="Project 1"
+								class="project-img"
+							/>
+							</div>
+							<h2 class="experience-sub-title project-title">QA Testing SQL </h2>
+							<div class="project-btn">
+							<button
+								class="btn"
+								onclick="location.href='https://github.com/'"
+							>
+								Github
+							</button>
+							</div>
+						</div>
+						<div class="details-container color-container">
+							<div class="article-container">
+							<img
+								src="assets\images\UX-UI.jpg"
+								alt="Project 2"
+								class="project-img"
+							/>
+							</div>
+							<h2 class="experience-sub-title project-title">Análisis UX/UI</h2>
+							<div class="project-btn">
+							<button
+								class="btn"
+								onclick="location.href='https://github.com/'"
+							>
+								Github
+							</button>
+							</div>
+						</div>
+						<div class="details-container color-container">
+							<div class="article-container">
+							<img
+								src="assets\images\Api-Testing.jpg"
+								alt="Project 3"
+								class="project-img"
+							/>
+						</div>
+							<h2 class="experience-sub-title project-title">API Testing</h2>
+							<div class="project-btn">
+							<button
+								class="btn"
+								onclick="location.href='https://github.com/'"
+							>
+								Github
+							</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</section>
+				<!-- Contact Box -->
+				<section class="section" id="contact">
+					<div class="contact-header">
+						<h1>Contáctame</h1>
+						<div class="conctac">
+							<h3><i class="ri-mail-line"></i> Email</h3>
+							<p>antonellaburbano.n@gmail.com</p>
+							<h3><i class="ri-linkedin-fill"></i> Linkedln</h3>
+							<a href="https://www.linkedin.com/in/antonella-burbano">www.linkedin.com/in/antonella-burbano</a>
+							<h3><i class="ri-map-pin-line"></i> Ubicación</h3>
+							<p>Colombia</p>
+						</div>
+					</div>
 				</section>
 			</main>
-
-			<!-- Footer -->
 		</div>
+		<!-- Footer-->
+		<footer class="footer">
+                <div>
+                    <p>
+                        Designed by <a href="" target="_blank"> Antonella.</a>
+                    </p>
+                </div>
+        </footer>  
 		<!----------------- Typing JS ------------------->
 		<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 		<!--------------- Scroll Reval JS -------------->
 		<script src="https://unpkg.com/scrollreveal"></script>
 		<!----------------- Main JS ------------------->
-		<script>
-			scr = "assets\js\main.js";
-		</script>
+		<script src="assets/js/main.js"></script>
 	</body>
 </html>
