@@ -1,2 +1,2 @@
 # portafolio-Antonella
-Portafolio persona Antonella Burbano
+Portafolio personal Antonella Burbano
