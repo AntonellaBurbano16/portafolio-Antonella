@@ -735,6 +735,7 @@ h3 {
 
 	.image,
 	.image img {
+		margin: auto; /* centra la foto horizontal y verticalmente */
 		width: 320px;
 		height: 320px;
 	}
